@@ -26,7 +26,7 @@ html {
 	box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5{
     margin: 0px;
     padding: 0px;
 }
@@ -48,6 +48,7 @@ body {
 /* Main Column Typography */
 .header {
     background-color: #7ba0cc;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
 
 .header > div {
@@ -77,28 +78,38 @@ body {
 
 .nav__item {
     list-style: none;
-    width: 50%;
+    width: 80%;
 }
 
 .nav__link {
     display: block;
     text-decoration: none;
+    color: black;
     font-size: 25px;
     padding: 15px 0;
 	margin: 0 30px;
 }
 
 .nav__link:hover {
-    color: black;
+    color: white;
 }
 
 /* Main Content */
+.map{
+    width: inherit;
+    object-fit: cover;
+    margin-bottom: 60px;
+}
+
 .content-area {
-    background-color: white;
-    margin-top: 10px;
+    position: relative;
+    background-image: url("../img/img_index_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+    margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px solid black;
 }
 
 .main-title {
@@ -113,18 +124,32 @@ body {
     padding: 0 200px;
 }
 
+.social_websites {
+    display: flex;
+    justify-content: center;
+}
+
+.social_link {
+    display: block;
+}
+
+.social_link > img{
+    max-width: 4em;
+}
 
 /* seprate line */
 .seperate-line {
-    background-color: black;
+    margin-top: 50px;
+    border: 0px;
+    border-top: 1px solid black;
 }
 
 .footer {
-    background-color: white;
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    height: 60px;
 }
 
 /* Grid Style */
@@ -138,15 +163,3 @@ body {
 	width: 100%;
 	padding: 0 10px;
 }
-
-.col-xs-11 {width: 91.662%}
-.col-xs-10 {width: 83.332%;}
-.col-xs-9 {width: 75%;}
-.col-xs-8 {width: 66.662%;}
-.col-xs-7 {width: 58.331%}
-.col-xs-6 {width: 50%;}
-.col-xs-5 {width: 41.662%}
-.col-xs-4 {width: 33.332%;}
-.col-xs-3 {width: 25%;}
-.col-xs-2 {width: 16.662%;}
-.col-xs-1 {width: 8.332%;}
