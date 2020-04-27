@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Ink Free";
+    src: url("fonts/Ink Free.ttf") format("truetype");
+    font-weight: normal;
+	font-style: normal;
+}
+
+.main-area{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+
+.tri{    
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent #b9b9b9;
+    display:inline-block;
+    border-radius: 2px;
+    left: 0;
+    right: 0;
+    top: 48%;
+    margin: 0 1200px;
+    z-index: 1;
+}
+.Small_cir{    
+    position: absolute;
+    width:40px;
+    height:40px;
+    border-style: dashed;
+    border-width: 2px 2px;
+    border-color:  transparent;  
+    border-radius: 50%;
+    display:inline-block;
+    left: 0;
+    right: 0;
+    top: 47.1%;
+    margin: 0 1186px;
+}
+
+.Big_cir1{    
+    position: absolute;
+    width:180px;
+    height:180px;
+    border-style: dashed;
+    border-width: 2px 2px;
+    border-color:  #999999;  
+    border-radius: 50%;
+    display:inline-block;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 350px;
+}
+.Step1{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 36%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    width: 68%; /* Set the width of the positioned div */
+    font-family: Ink free;
+    font-size: 40px;
+    color:black
+}
+.Big_cir2{    
+    position: absolute;
+    width:180px;
+    height:180px;
+    border-style: dashed;
+    border-width: 2px 2px;
+    border-color:  #999999;  
+    border-radius: 50%;
+    display:inline-block;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 650px;
+}
+.Step2{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 36%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    width: 72%; /* Set the width of the positioned div */
+    font-family: Ink free;
+    font-size: 40px;
+    color:black
+}
+.Big_cir3{    
+    position: absolute;
+    width:180px;
+    height:180px;
+    border-style: dashed;
+    border-width: 2px 2px;
+    border-color: #999999;  
+    border-radius: 50%;
+    display:inline-block;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 0 950px;
+}
+.Step3{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 36%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    width: 72%; /* Set the width of the positioned div */
+    font-family: Ink free;
+    font-size: 40px;
+    color:black
+}
+.background .Sep{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    width: 55%; /* Set the width of the positioned div */
+    font-family: "Ink free";
+    font-size: 20px;
+}
+.tri:hover{
+    border-color: transparent transparent transparent #999999;
+}
+.Small_cir:hover{
+    border-color: #999999;
+}
+        
