@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Ink Free";
+  src: url("alphabetized\ cassette\ tapes.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.bg{
+  height: 727px;
+  width: 1507px; 
+  font-family: alphabetized cassette tapes;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */ 
+  
+}
+img{
+  position: absolute;
+}
+.main{
+  width: 870px;
+  height: 600px;
+  margin-left: 320px;
+  position: relative;
+}
+h1{
+  font-size: 70px; 
+  text-align: center;
+  margin-bottom: 5px;
+}
+.first{
+  display: flex;
+  margin-bottom: 5px;
+}
+.image1 {
+  position: relative;
+  width: 220px;
+  z-index: 1;
+  transform: rotate(350deg);
+}
+.image2 {
+  width: 160px;
+  padding-left: 20px;
+  padding-top: 50px;
+  transform: rotate(355deg);
+  z-index: 3;
+}
+p{
+  font-size: 28px ; 
+  text-align: justify;
+  position: relative;
+}
+.second{
+  margin-left:45px ;
+}
+.image3{
+  width: 770px; 
+  height: 230px; 
+  filter: grayscale(70%); 
+  z-index: 1;
+}
+.image-sec{
+  display: flex;
+  margin-left: 140px;
+  padding-top: 40px;
+}
+.image4{
+  width: 200px; 
+  z-index: 3;
+  transform: rotate(5deg);
+  position: relative; 
+}
+.image5{
+  padding-top: 10px;
+  z-index: 3; 
+  width: 200px;
+  padding-left: 120px;
+  transform: rotate(355deg);
+  position: relative;
+}
+.arrow{    
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;    
+  border-color: transparent transparent transparent #b9b9b9;
+  display:inline-block;
+  border-radius: 2px;
+  left: 20px;
+  right: 0;
+  top: 50%;
+  margin: 0 1200px;
+  z-index: 1;
+}
