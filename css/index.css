@@ -127,7 +127,7 @@ body {
 
 .social_websites {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .social_link {
@@ -135,7 +135,7 @@ body {
 }
 
 .social_link > img{
-    max-width: 4em;
+    max-width: 4rem;
 }
 
 /* seprate line */
