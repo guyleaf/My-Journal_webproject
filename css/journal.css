@@ -4,11 +4,24 @@
     font-weight: normal;
 	font-style: normal;
 }
-
-.main-area{
-    position: relative;
-    display: inline-block; /* Make the width of box same as image */
+.background{
+    background-image: url(./img/final.png);
+    height: 750px;
+    width: 1535px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    position: absolute;
 }
+.main-area{
+    margin-top: 90px;
+    margin-left:350px ;
+    position: absolute;
+}
+/*.main-area{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image 
+}*/
 
 .tri{    
     position: absolute;
@@ -19,32 +32,30 @@
     border-radius: 2px;
     left: 0;
     right: 0;
-    top: 48%;
-    margin: 0 1200px;
-    z-index: 1;
+    top: 45.5%;
+    margin: 0 1215px;
 }
 .Small_cir{    
     position: absolute;
     width:40px;
     height:40px;
-    border-style: dashed;
+    border-style: solid;
     border-width: 2px 2px;
     border-color:  transparent;  
     border-radius: 50%;
     display:inline-block;
     left: 0;
     right: 0;
-    top: 47.1%;
-    margin: 0 1186px;
+    top: 44.6%;
+    margin: 0 1202px;
 }
-
 .Big_cir1{    
     position: absolute;
     width:180px;
     height:180px;
     border-style: dashed;
     border-width: 2px 2px;
-    border-color:  #999999;  
+    border-color: black;  
     border-radius: 50%;
     display:inline-block;
     left: 0;
@@ -70,7 +81,7 @@
     height:180px;
     border-style: dashed;
     border-width: 2px 2px;
-    border-color:  #999999;  
+    border-color:  black;  
     border-radius: 50%;
     display:inline-block;
     left: 0;
@@ -96,7 +107,7 @@
     height:180px;
     border-style: dashed;
     border-width: 2px 2px;
-    border-color: #999999;  
+    border-color: black;  
     border-radius: 50%;
     display:inline-block;
     left: 0;
@@ -132,5 +143,19 @@
 }
 .Small_cir:hover{
     border-color: #999999;
+}
+.Sep1_text{
+    font-family: Ink free;
+    position: relative;
+    text-align: left;
+    width: 68%;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+.Sep1_pic{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 150px;
 }
         
