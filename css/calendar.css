@@ -9,13 +9,13 @@ body {
 	margin: 0;
     padding: 0;
     height: 100%;
-    background-color: gray;
+    background-color: rgb(174, 223, 243);
     
 }
 h1{
     margin: 0px;
     padding: 0px;
-    font-size: 52px; 
+    font-size: 80px; 
     font-family: Ink Free;
     text-align: center;
 }
@@ -23,7 +23,10 @@ h1{
     align-items: center;
     max-width: 75%;
     height: 570px;
-    margin: 90px auto 0 auto;
+    margin: 30px auto 0 auto;
+}
+figure{
+    margin: 0 0;
 }
 
 .container {
@@ -33,11 +36,12 @@ h1{
     justify-content: center;
 }
 .container img{
-    width: 150px;
+    width: 300px;
 }
 .Oct_pic , .Dec_pic{
-    margin-top: 100px;
+    margin-top: 250px;
 }
+
 .container figure:hover img{
     filter: drop-shadow(0 0 0.75rem white);
 }
