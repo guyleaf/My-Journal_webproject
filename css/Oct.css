@@ -32,6 +32,20 @@ body {
     margin-bottom: 0px;
 }
 
+.nav {
+    position: relative;
+    display: flex;
+    max-width: 62%;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    display: block;
+    position: absolute;
+    top: -49px;
+}
+
 .main-area {
     display: flex;
     align-items: center;

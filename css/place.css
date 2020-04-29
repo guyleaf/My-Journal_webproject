@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Ink Free";
+    src: url("fonts/Ink Free.ttf") format("truetype");
+    font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	line-height: 1.7;
     box-sizing: border-box;
@@ -48,11 +55,11 @@ h1{
     transition: .5s ease;
     opacity: 0;
     background-color: rgb(174, 223, 243);
-    width: 90px;
-    height: 90px;
-    border-style: dotted;
+    width: 150px;
+    height: 150px;
+    border-style: dashed;
     border-color: black;
-    border-width: 4px 4px 4px 4px;
+    border-width: 2px 2px 2px 2px;
     border-radius: 50%;
 }
 
@@ -68,8 +75,10 @@ h1{
 }
 
 .text {
+    font-family: "Ink Free";
     color: black;
-    font-size: 16px;
+    font-size: 28px;
+    font-weight: 800;
     text-align: center;
     padding-top: 35%;
 }
