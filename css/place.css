@@ -1,0 +1,65 @@
+html {
+	line-height: 1.7;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(174, 223, 243);
+    
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 80px; 
+    font-family: Ink Free;
+    text-align: center;
+}
+.main-area {
+    align-items: center;
+    max-width: 75%;
+    height: 570px;
+    margin: 30px auto 0 auto;
+}
+.container {
+    padding: 0 105px;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    transition: .5s ease;
+    opacity: 0;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+}
+.container figure{
+    width: 400px;
+    height: 400px;
+}
+
+.Fiji_pic{
+    background-image: url(../img/F-1.png);
+}
+.Kiribati_pic{
+    background-image: url(../img/K-1.png);
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    width: inherit;
+    height: inherit;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.container figure:hover {
+    opacity: 0.3;
+}
+.container figure:hover .box{
+    opacity: 1;
+}
