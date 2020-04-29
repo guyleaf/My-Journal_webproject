@@ -16,11 +16,6 @@ html {
 	box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5{
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
 	margin: 0;
     padding: 0;
@@ -30,12 +25,20 @@ body {
     background-size: cover;
 }
 
+.title {
+    font-family: "Ink Free";
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
 .main-area {
     display: flex;
     align-items: center;
-    max-width: 75%;
+    max-width: 74%;
     height: 570px;
-    margin: 90px auto 0 auto;
+    margin: 6px auto 0 auto;
 }
 
 .container {
@@ -128,6 +131,7 @@ body {
     position: relative;
     border: 20px solid rgba(255, 255, 255, 1);
     border-radius: 50%;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
 
 .button_next:hover:before {
@@ -147,4 +151,5 @@ body {
     position: relative;
     border: 20px solid rgba(255, 255, 255, 1);
     border-radius: 50%;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
