@@ -22,11 +22,12 @@ body {
   display: flex;
   align-items: center;
   max-width: 75%;
-  margin: 0 auto;
+  height: 570px;
+  margin: 90px auto 0 auto;
 }
+
 .container{
   padding: 0 105px;
-  align-items: center;
 }
 
 h1{
@@ -53,10 +54,11 @@ h1{
   z-index: 3;
   position: absolute;
 }
-.tab { 
-  display: inline-block; 
-  margin-left: 40px; 
-} 
+
+.text {
+  text-indent: 40px;
+}
+
 p{
   font-size: 20px ; 
   font-family: Ink Free;

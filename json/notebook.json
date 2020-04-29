@@ -1,9 +1,11 @@
 {   
-    "Kiribati": {
-        "months": [
-            "Sep",
-            "Oct"
-        ],
+    "months": [
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+    ],
+    "Sep": {
         "img": {
             "aside": "img/Sep/boat.png",
             "main": [
@@ -13,15 +15,21 @@
             ]
         },
         "text": [
-            [
-                "In September, I still focus on the broadstock culture Milkfish are fish that lay eggs at night, as a result on the next day we need to avoid the eggs under the sunshine. In the morning after observed the eggs that are slightly transparent and yellowish on the surface of the water, we use the egg collection net to collect the fish eggs."
-            ],
-            [
-                "The eggs will be collect three times a day before noon time, during this period we turn on the paddlewheel to make wave to let the eggs flow into the collection net."
-            ],
-            [
-                "After collected the eggs, put them into the fish egg collection barrel and put the air stone inside to increase the oxygen in the barrel, turn it off before the collection, let the eggs stay in the bucket for 30 minutes to separate the fertilized eggs and the dead eggs, and last collect the fertilized eggs floating on the water surface, weight it then add to the nursery pond."
+                "<img class='main__aside' src='' alt=''>\n<div class='article'>\n<img class='main__pic' src='' alt=''>\n<p class='text'>\nIn September, I still focus on the broadstock culture Milkfish are fish that lay eggs at night, as a result on the next day we need to avoid the eggs under the sunshine. In the morning after observed the eggs that are slightly transparent and yellowish on the surface of the water, we use the egg collection net to collect the fish eggs.\n</p>\n</div>",
+                "<img class='main__aside' src='' alt=''>\n<div class='article'>\n<img class='main__pic' src='' alt=''>\n<p class='text'>\nThe eggs will be collect three times a day before noon time, during this period we turn on the paddlewheel to make wave to let the eggs flow into the collection net.\n</p>\n</div>",
+                "<img class='main__aside' src='' alt=''>\n<div class='article'>\n<img class='main__pic' src='' alt=''>\n<p class='text'>\nAfter collected the eggs, put them into the fish egg collection barrel and put the air stone inside to increase the oxygen in the barrel, turn it off before the collection, let the eggs stay in the bucket for 30 minutes to separate the fertilized eggs and the dead eggs, and last collect the fertilized eggs floating on the water surface, weight it then add to the nursery pond.\n</p>\n</div>"
+        ]
+    },
+    "Oct": {
+        "img": {
+            "main": [
+                "img/Oct/picture (1).png",
+                "img/Oct/picture (2).png"
             ]
+        },
+        "text": [
+            "<img src='' alt='' class='main__pic' style='margin-right: 10px;'>\n<p class='text'>\nIn order to management the remaining fry, we collect them in several large outdoor nursery ponds. We use the manner of purse seine fishing to catch the fish fries. First put the net from the end of the nursery pond, second slowly move to the other side of the pond. During this step avoid the intense action to terrify the fry and cause the death.\n</p>",
+            "<p class='text'>\nAfter coming to Fiji, the project here is just about to start, as a result the cultivation ponds are still under construction. I took this opportunity to take a look that how the pond was build and participate it. At the same times I also learn how to the design the pond to achieve the purpose of application and management. During the construction, pay attention in each step. If there are any problems after the construct is done, it will take more time, money and manpower to repair it. The daily work in the aqua station is to cultivate the broodstock. The purpose is to cultivate the fish to reach the mature stage, and in the future it can naturally spawning eggs and starts to produce the fry. Therefore, in order to achieve the sustainable development of the project, it is necessary to establish the broodstock pond and follow the four principles during feeding including the same amount of feed per meals, same place, same time, and same quality.\n</p>\n<img src='' alt='' class='main__pic' style='margin-left: 10px;'>"
         ]
     }
 }
