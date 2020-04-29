@@ -24,7 +24,8 @@ h1, h2, h3, h4, h5{
 body {
 	margin: 0;
     padding: 0;
-    background-image: url("../img/final.png");
+    height: 100%;
+    background-image: url("../img/Sep/background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -33,16 +34,25 @@ body {
     display: flex;
     align-items: center;
     max-width: 75%;
-    margin: 14% auto;
+    height: 570px;
+    margin: 90px auto 0 auto;
 }
 
 .container {
     padding: 0 105px;
+    height: inherit;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
 }
 
-.image {
+.article {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__pic {
     margin-right: 10px;
 }
 

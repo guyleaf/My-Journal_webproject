@@ -1,12 +1,13 @@
 [
     {
         "name": "Kiribati",
+        "months": "Sep",
         "img": {
-            "aside": [
-
-            ],
+            "aside": "img/Sep/boat.png",
             "main": [
-                
+                "img/Sep/picture (1).png",
+                "img/Sep/picture (2).png",
+                "img/Sep/picture (3).png"
             ]
         },
         "text": [
@@ -17,9 +18,11 @@
     },
     {
         "name": "Fiji",
-        "img": [
-
-        ],
+        "months": "Oct",
+        "img": {
+            "main": [
+            ]
+        },
         "text": [
 
         ]
