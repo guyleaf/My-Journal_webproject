@@ -9,7 +9,7 @@ body {
 	margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(174, 223, 243);
+    background-image: url(../img/1118.png);
     
 }
 h1{
@@ -26,7 +26,7 @@ h1{
     margin: 30px auto 0 auto;
 }
 .container {
-    padding: 0 105px;
+    padding: 45px 105px;
     display: flex;
     justify-content: center;
 }
@@ -58,14 +58,13 @@ h1{
 
 .container figure{
     width: 400px;
-    height: 400px;
+    height: 407px;
 }
-
 .Fiji_pic{
-    background-image: url(../img/F-1.png);
+    background-image: url(../img/Kiribati-3.jpg);
 }
 .Kiribati_pic{
-    background-image: url(../img/K-1.png);
+    background-image: url(../img/Fiji-3.jpg);
 }
 
 .text {
