@@ -64,6 +64,7 @@ body {
 .text {
     font-family: "Ink Free";
     font-size: 20px;
+    line-height: 1.8em;
     text-indent: 40px;
 }
 
@@ -86,7 +87,6 @@ body {
     height: 0;
     border: 20px solid rgba(255, 255, 255, 0.6);
     border-radius: 50%;
-    visibility: hidden;
 }
 
 .button_next:before {
@@ -108,7 +108,6 @@ body {
     height: 0;
     border: 20px solid rgba(255, 255, 255, 0.6);
     border-radius: 50%;
-    visibility: hidden;
 }
 
 .button_back:hover:before {

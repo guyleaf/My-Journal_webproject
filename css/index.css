@@ -47,8 +47,8 @@ body {
 
 /* Main Column Typography */
 .header {
-    background-color: #7ba0cc;
-    margin-top: 7px;
+    background-color: rgb(119, 156, 202);
+    margin-top: 15px;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
 
@@ -59,10 +59,9 @@ body {
 }
 
 .header__title {
-    font-family: "futura-pt", sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* Site Navigation */
