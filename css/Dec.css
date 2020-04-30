@@ -1,0 +1,54 @@
+.container{
+  padding: 0 105px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; 
+}
+
+.image6{
+  margin-left: 30px;
+  width: 200px;
+  z-index: 3;
+  transform: rotate(8deg);
+}
+.image7{
+  margin-top: 10px;
+  z-index: 1;
+  width: 200px;
+  transform: rotate(350deg);
+}
+.image8{
+  width: 200px; 
+  z-index: 3;
+  transform: rotate(8deg);
+}
+
+.hoverDes{
+  display: flex;
+  margin-top: -20px;
+}
+
+.hoverDes figure:hover img{
+  opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}

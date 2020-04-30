@@ -1,0 +1,44 @@
+.container{
+    padding: 0 105px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+}
+
+.image-box{
+    position: relative;
+    display: flex;  
+    height: 250px;
+    width: 820px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Nov/blue2.PNG");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.second{
+    width: inherit;
+    margin: 0 auto;
+}
+
+.image1 {
+    width: 200px;
+    transform: rotate(5deg);
+}
+
+.image2{
+    width: 200px;
+    height: 150px;
+    margin: 18px 20px 0 20px;
+}
+
+
+.image3{
+    width: 200px;
+    height: 150px;
+    transform: rotate(355deg);
+}
