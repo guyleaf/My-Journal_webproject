@@ -54,7 +54,7 @@ h1{
 .box{
     transition: .5s ease;
     opacity: 0;
-    background-color: rgb(174, 223, 243);
+    background-color: rgb(181,181,181);
     width: 150px;
     height: 150px;
     border-style: dashed;
@@ -77,10 +77,10 @@ h1{
 .text {
     font-family: "Ink Free";
     color: black;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 800;
     text-align: center;
-    padding-top: 35%;
+    padding-top: 32%;
 }
 
 .container figure:hover {
