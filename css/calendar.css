@@ -1,9 +1,7 @@
 html {
-	line-height: 1.7;
     height: 100%;
     overflow: hidden;
 }
-
 body {
     height: 100%;
     background-image: url(../img/1118.png);
@@ -12,15 +10,16 @@ body {
 }
 h1{
     margin: 80px;
-    font-size: 100px; 
+    font-size: 44px !important; 
     font-family: Ink Free;
     text-align: center;
+    line-height: 1.7 !important;
 }
 .main-area {
     align-items: center;
 }
 figure{
-    margin: 0 0;
+    margin: 0 0 !important;
 }
 .container figure:hover img{
     filter: drop-shadow(0 0 0.75rem white);
@@ -28,8 +27,6 @@ figure{
 .bookshelf {
     width: 100%;
     height: 300px;
-    display: flex;
-    align-items: flex-end;
 }
 .self1{
     background-image: url(../img/shelf1.png);
@@ -43,6 +40,7 @@ figure{
     background-size: contain;
     background-position: center;
 }
+
 .Jul_pic{
     height: 140px;
 }
@@ -94,14 +92,9 @@ figure{
     margin-right: 20px;
 }
 .books{
-    left:0%;
-    height: 95%;
-    margin: auto;
     display: flex;
     align-items: flex-end;
 }
 /*@media (max-width: 1200px){
-    .bookshelf {
-        display: inline;
-    }
+
 }*/
