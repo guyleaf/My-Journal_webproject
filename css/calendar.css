@@ -1,49 +1,61 @@
 html {
 	line-height: 1.7;
-    box-sizing: border-box;
     height: 100%;
     overflow: hidden;
 }
 
 body {
-	margin: 0;
-    padding: 0;
     height: 100%;
     background-image: url(../img/1118.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 h1{
-    margin: 0px;
-    padding: 0px;
-    font-size: 80px; 
+    margin: 80px;
+    font-size: 180px; 
     font-family: Ink Free;
     text-align: center;
 }
 .main-area {
     align-items: center;
-    max-width: 75%;
-    height: 570px;
-    margin: 30px auto 0 auto;
 }
 figure{
     margin: 0 0;
 }
-
-.container {
-    padding: 0 105px;
-    height: inherit;
-    display: flex;
-    justify-content: center;
-}
-.container img{
-    width: 300px;
-}
-.Oct_pic , .Dec_pic{
-    margin-top: 250px;
-}
-
 .container figure:hover img{
     filter: drop-shadow(0 0 0.75rem white);
 }
+.self1{
+    background-image: url(../img/shelf1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.self2{
+    background-image: url(../img/shelf2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.Jul_pic{
+    height: 400px;
+}
+.Aug_pic{
+    height: 400px;
+}
+.books{
+    height:1000px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    left:0%;
+}
+/*@media (max-width: 768px){
+    .self1{
+        display: flex;
+
+    }
+    .self2{
+        display: flex;
+    }
+}*/
