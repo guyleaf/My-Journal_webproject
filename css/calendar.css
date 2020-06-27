@@ -10,11 +10,12 @@ body {
 }
 h1{
     margin: 80px;
-    font-size: 44px !important; 
+    font-size: 2em !important; 
     font-family: Ink Free;
     text-align: center;
     line-height: 1.7 !important;
 }
+
 .main-area {
     align-items: center;
 }
@@ -25,21 +26,33 @@ figure{
     filter: drop-shadow(0 0 0.75rem white);
 }
 .bookshelf {
-    width: 100%;
     height: 300px;
+    display: flex;
+    justify-content: center;
 }
-.self1{
+.background1{
+    width: 455px;
     background-image: url(../img/shelf1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
-.self2{
+.background2{
+    width: 455px;
     background-image: url(../img/shelf2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
+.books{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 24px 0;
+    margin-left: 25px;
+}
+
 
 .Jul_pic{
     height: 140px;
@@ -91,9 +104,65 @@ figure{
     margin-left: 13px;
     margin-right: 20px;
 }
-.books{
-    display: flex;
-    align-items: flex-end;
+
+@media(max-width: 486px) {
+    .background1, .background2 {
+        width: 100%;
+    }
+    .books {
+        padding: 1.2em 0;
+        margin-left: 6%;
+    }
+    .Jul_pic{
+        height: 110px;
+    }
+    .Aug_pic{
+        height: 110px;
+        transform: rotate(-8deg);
+        margin-left: 9.8px;
+        margin-right: 20px;
+    }
+    .Sept_pic{
+        height: 110px;
+    }
+    .Oct_pic{
+        height: 120px;
+        transform: rotate(-5deg);
+        margin-left: 7px;
+        margin-right: 50px;
+    }
+    .Nov_pic{
+        height: 110px;
+        transform: rotate(15deg);
+        margin-right: 20px;
+    }
+    .Dec_pic{
+        height: 120px;
+    }
+    .Jan_pic{
+        height: 110px;
+    }
+    .Feb_pic{
+        height: 125px;
+    }
+    .Mar_pic{
+        height: 115px;
+        transform: rotate(15deg);
+        margin-left: 30px;
+        margin-right: 18px;
+    }
+    .Apr_pic{
+        height: 142px;
+    }
+    .May_pic{
+        height: 118px;
+    }
+    .Jun_pic{
+        height: 135px;
+        transform: rotate(-12deg);
+        margin-left: 13px;
+        margin-right: 20px;
+    }
 }
 /*@media (max-width: 1200px){
 
