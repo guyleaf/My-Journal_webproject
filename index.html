@@ -4,63 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a class="header__title font-Inkfree" href="index.html"><h1>My Journal</h1></a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link font-Inkfree" href="calendar.html">Calendar</a></li>
-                    <li class="nav__item"><a class="nav__link font-Inkfree" href="place.html">Place</a></li>
-                </ul>
+    <div class="container bk main">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light top">
+                <div class="container top-nav">
+                    <a class="navbar-brand header__title font-Inkfree" href="index.html">My Journal</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link nav__link font-Inkfree" href="calendar.html">Calendar</a></li>
+                            <li class="nav-item"><a class="nav-link nav__link font-Inkfree" href="place.html">Place</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </div>
-    </header>
-
-    <div class="">
-        <div class="content-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img class="map" src="img/img_map.jpg" alt="This is a map picture">
-                    </div>
-                </div><!-- /row -->
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="map" src="img/img_map.jpg" alt="This is a map picture">
+                </div>
+            </div><!-- /row -->
     
-                <div class="row">
-                    <div class="col">
-                        <div class="article">
-                            <h2 class="main-title font-Inkfree">Introduction</h2>
-                            <p class="main-text main-content font-Inkfree">
-                                In the beginning, I chose to go to Kiribati for the internship is because I’m interest in aquaculture and have some dreams, aspiration for going to the island in the Pacific Ocean. After coming to Kiribati, I feel like came to another world. You can see most of the buildings are built by the natural materials and the sea is around us it looks very simple and local.<br>Sept. 20, 2019 Kiribati broke off diplomatic relations with Taiwan.<br>So, I was sent to Fiji as a result.
-                            </p>
-                        </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="article">
+                        <h2 class="main-title font-Inkfree">Introduction</h2>
+                        <p class="main-text main-content font-Inkfree">
+                            In the beginning, I chose to go to Kiribati for the internship is because I’m interest in aquaculture and have some dreams, aspiration for going to the island in the Pacific Ocean. After coming to Kiribati, I feel like came to another world. You can see most of the buildings are built by the natural materials and the sea is around us it looks very simple and local.<br>Sept. 20, 2019 Kiribati broke off diplomatic relations with Taiwan.<br>So, I was sent to Fiji as a result.
+                        </p>
                     </div>
-                </div><!-- /row -->
+                </div>
+            </div><!-- /row -->
     
-                <hr class="seperate-line">
-
-                <div class="row">
-                    <div class="col">
-                        <div class="social_websites">
-                            <a class="social_link" href=""><img src="img/img_FB.png" alt="This is a link for FB"></a>
-                            <a class="social_link" href=""><img src="img/img_Instagram.png" alt="This is a link for Instagram"></a>
-                            <a class="social_link" href=""><img src="img/img_Twitter.png" alt="This is a link for Twitter"></a>
-                            <a class="social_link" href=""><img src="img/img_Whatsapp.png" alt="This is a link for Whatsapp"></a>
-                        </div>
-                    </div>
-                </div><!-- /row -->
-                
-            </div><!-- /container -->
+            <hr class="seperate-line">
+    
+            <div class="row">
+                <div class="col-3">
+                    <a class="social_link text-center" href=""><img src="img/img_FB.png" alt="This is a link for FB"></a>
+                </div>
+                <div class="col-3">
+                    <a class="social_link text-center" href=""><img src="img/img_Instagram.png" alt="This is a link for Instagram"></a>
+                </div>
+                <div class="col-3">
+                    <a class="social_link text-center" href=""><img src="img/img_Twitter.png" alt="This is a link for Twitter"></a>
+                </div>
+                <div class="col-3">
+                    <a class="social_link text-center" href=""><img src="img/img_Whatsapp.png" alt="This is a link for Whatsapp"></a>
+                </div>
+            </div><!-- /row -->
             
-            <footer class="footer container">
-                <p class="font-Inkfree">Copyright</p>
+            <footer class="footer container font-Inkfree text-center">
+                Copyright
             </footer>
         </div>
     </div>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                var height = $(window).scrollTop();
 
-    
+                if (height > 50) {
+                    $(".top-nav").addClass("affix");
+                }
+                else {
+                    $(".top-nav").removeClass("affix");
+                }
+            });
+            })
+    </script>
 </body>
 </html>
