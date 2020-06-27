@@ -97,11 +97,15 @@ body {
     background-color: #cccccc;
     border-radius: 1px;
 }
-
 .navbar-toggler span.icon-bar {
     transition: all 0.15s;
 }
-
+.navbar-toggler.collapsed span:nth-child(1):hover{
+    transform: translateY(-0.2rem);
+}
+.navbar-toggler.collapsed span:nth-child(2):hover{
+    transform: translateY(0.15rem);
+}
 .navbar-toggler span:nth-child(1) {
     margin-bottom: 5px;
     transform: rotate(45deg);
