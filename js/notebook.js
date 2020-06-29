@@ -58,3 +58,21 @@ function listen(month) {
 
     console.log("ready");
 }
+
+$(document).ready(function(){
+    if (screen.height > screen.width) {
+        $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
+    }
+
+    window.addEventListener("orientationchange", function() {
+        // 橫向 (僅限於行動裝置)
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            $('#rotationReminder').remove();
+        }
+        // 直向 (僅限於行動裝置)，後者避免開發者切換成行動裝置時誤判
+        else if (window.matchMedia("(orientation: landscape)").matches && screen.height > screen.width) {
+            if ($('#rotationReminder').length == 0)
+                $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
+        }
+    }, false);
+});

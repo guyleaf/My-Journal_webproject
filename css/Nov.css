@@ -1,9 +1,10 @@
-@media (max-width: 800px){
+/*@media (max-width: 800px){
     body{
         height: 100vw;
         transform: rotate(90deg);
     }
-}
+}*/
+
 .container{
     padding: 0 105px;
     height: inherit;
