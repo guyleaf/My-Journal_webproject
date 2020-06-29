@@ -72,6 +72,7 @@ body {
 .top-nav {
     padding-left: 1.8rem !important;
     padding-right: 1.2rem !important;
+    padding-top: 1rem !important;
 }
 .navbar-brand img{
     width: 100px;
