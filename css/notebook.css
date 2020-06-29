@@ -73,9 +73,8 @@ body {
 .main-area {
     display: flex;
     align-items: center;
-    max-width: 74%;
-    height: 570px;
-    margin: 6px auto 0 auto;
+    height: 700px;
+    margin-top: 40px;
 }
 
 .article {
@@ -89,6 +88,20 @@ body {
     font-size: 20px;
     line-height: 1.8em;
     text-indent: 40px;
+}
+
+.button1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -121px;
+}
+
+.button2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -180px;
 }
 
 .button_back:before {

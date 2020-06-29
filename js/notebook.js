@@ -1,15 +1,15 @@
 function updateState(month, page) {
     $.getJSON("json/notebook.json", function(result) {
-        $('.container').html(result[month].text[page - 1]);
+        $('.main-text').html(result[month].text[page - 1]);
         $(".main__pic").attr("src", result[month].img.main[page - 1] ? result[month].img.main[page - 1] : "");
         if (result[month].img.aside != undefined)
         {
             $(".main__aside").attr("src", result[month].img.aside);
-            $(".container").css("justify-content", "start");
+            $(".main-text").css("justify-content", "start");
         }
         else
         {
-            $(".container").css("justify-content", "center");
+            $(".main-text").css("justify-content", "center");
         }
         
         $(".button_back").css("visibility", "visible");
