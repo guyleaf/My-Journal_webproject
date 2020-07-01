@@ -60,7 +60,7 @@ function listen(month) {
 }
 
 $(document).ready(function(){
-    if (screen.height > screen.width) {
+    if (window.innerHeight > window.innerWidth) {
         $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
     }
 
