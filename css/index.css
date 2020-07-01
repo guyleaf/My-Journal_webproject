@@ -79,7 +79,7 @@ body {
 /* Site Navigation */
 
 .top {
-    margin-top: 6px;
+    margin-top: 8px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -87,7 +87,7 @@ body {
 .top-nav {
     padding-left: 1.8rem !important;
     padding-right: 1.2rem !important;
-    padding-top: 1rem !important;
+    padding-top: 0rem !important;
 }
 .navbar-brand img{
     width: 100px;
