@@ -5,12 +5,6 @@
 	font-style: normal;
 }
 
-@media (max-width: 800px){
-    body{
-        height: 100vw;
-        transform: rotate(90deg);
-    }
-}
 html {
 	line-height: 1.7;
     box-sizing: border-box;
@@ -74,13 +68,19 @@ h1{
     width: 400px;
     height: 407px;
 }
+/*
 .Kiribati_pic{
     background-image: url(../img/Kiribati-3.jpg);
 }
 .Fiji_pic{
-    background-image: url(../img/Fiji-3.jpg);
+   background-image: url(../img/Fiji-3.jpg);
 }
-
+*/
+.pic{
+    position: absolute;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .text {
     font-family: "Ink Free";
     color: black;
@@ -89,7 +89,13 @@ h1{
     text-align: center;
     padding-top: 32%;
 }
-
+.col-md-6{
+    padding: 0px 0px 0px 0px !important;
+}
+.row{
+    justify-content: center !important;
+    align-content: stretch !important;
+}
 .container figure:hover {
     opacity: 0.3;
 }
