@@ -60,9 +60,19 @@ function listen(month) {
 }
 
 $(document).ready(function(){
-    if (window.innerHeight > window.innerWidth) {
-        $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
+    var md = new MobileDetect(window.navigator.userAgent);
+
+    if (md.mobile() != null && md.mobile() != "Nexus") {
+        if (window.innerHeight > window.innerWidth) {
+            $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
+        }
+
+        $(".button1").remove();
+        $(".button2").remove();
+        $(".row>div").removeClass("col-10");
+        $(".row>div").addClass("col-12");
     }
+    
 
     window.addEventListener("orientationchange", function() {
         // 橫向 (僅限於行動裝置)
