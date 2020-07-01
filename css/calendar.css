@@ -111,12 +111,6 @@ figure{
 }
 
 @media(max-width: 486px) {
-    body {
-        height: 100%;
-        background-image: url(../img/phone-background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .background1, .background2 {
         width: 100%;
     }
