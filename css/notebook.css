@@ -28,9 +28,51 @@ body {
     body {
         background-image: url("../img/test.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .custom-container-width:first-child {
+        max-width: 670px;
+    }
+    .custom-container-width {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 700px) {
+    .custom-container-width:first-child {
+        max-width: 610px;
+    }
+
+    .custom-container-width {
+        max-width: 585px;
+    }
+}
+
+@media (max-width: 600px) {
+    .custom-container-width:first-child {
+        max-width: 530px;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-container-width:first-child {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-container-width:first-child {
+        max-width: 1160px;
+    }
+
+    .custom-container-width {
+        max-width: 1160px;
+    }
+}
+
 
 #rotationReminder {
     position: fixed;
@@ -58,9 +100,14 @@ body {
 .title {
     font-family: "Ink Free";
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-top: 12px;
     margin-bottom: 0px;
+}
+
+.current {
+    display: block;
+    text-align: end;
 }
 
 .nav {
@@ -81,7 +128,7 @@ body {
     display: flex;
     align-items: center;
     height: 700px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .article {
@@ -200,6 +247,7 @@ body {
     }
 
     .title {
+        font-size: 2.1em;
         margin-top: 0;
     }
 
@@ -213,5 +261,55 @@ body {
 
     .text {
         font-size: 15px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+    .title {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .main__aside {
+        width: 100px;
+    }
+
+    .current {
+        font-size: 0.8rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 700px) {
+    .title {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .main__aside {
+        width: 100px;
+    }
+
+    .current {
+        font-size: 0.8rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 600px) {
+    .title {
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .main__aside {
+        margin-top: 0;
+    }
+
+    .main__pic {
+        margin-right: 0 !important;
+        width: 150px;
+    }
+
+    .text {
+        font-size: 10px;
     }
 }

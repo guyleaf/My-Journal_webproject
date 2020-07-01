@@ -12,7 +12,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 // Get a reference to the storage service, which is used to create references in your storage bucket
 var storage = firebase.storage();
-
+var store = firebase.firestore();
 // Create a storage reference from our storage service
 var storageRef = storage.ref();
 
@@ -38,10 +38,7 @@ function getImage(image_name, classname) {
       }
     );
 }
-<!---- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
-    
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
-    <script src="js/storage.js"></script>
+
+function getData(month, page) {
+
+}

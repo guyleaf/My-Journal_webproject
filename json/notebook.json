@@ -31,5 +31,23 @@
             "<img src='' alt='' class='main__pic' style='margin-right: 10px;'>\n<p class='text'>\nIn order to management the remaining fry, we collect them in several large outdoor nursery ponds. We use the manner of purse seine fishing to catch the fish fries. First put the net from the end of the nursery pond, second slowly move to the other side of the pond. During this step avoid the intense action to terrify the fry and cause the death.\n</p>",
             "<p class='text'>\nAfter coming to Fiji, the project here is just about to start, as a result the cultivation ponds are still under construction. I took this opportunity to take a look that how the pond was build and participate it. At the same times I also learn how to the design the pond to achieve the purpose of application and management. During the construction, pay attention in each step. If there are any problems after the construct is done, it will take more time, money and manpower to repair it. The daily work in the aqua station is to cultivate the broodstock. The purpose is to cultivate the fish to reach the mature stage, and in the future it can naturally spawning eggs and starts to produce the fry. Therefore, in order to achieve the sustainable development of the project, it is necessary to establish the broodstock pond and follow the four principles during feeding including the same amount of feed per meals, same place, same time, and same quality.\n</p>\n<img src='' alt='' class='main__pic' style='margin-left: 10px;'>"
         ]
+    },
+    "Nov" : {
+        "img": {
+            "main": [
+            ]
+        },
+        "text": [
+            "<div class='article'>\n<div class='row'>\n<div class='col-12'>\n<div class='image-box'>\n<img class='image1' src='img/Nov/level.jpg' alt='image2'>\n<img class='image2' src='img/Nov/nov-1.jpg' alt='nov1'>\n<img class='image3' src='img/Nov/nov-2.jpg' alt='nov2'>\n</div>\n</div>\n<div class='col-12'>\n<p class='text'>\nIn November, I join the construction work with the substitute civilian servicemen. As I said before the design of the pond is the most important step during the construction, including the size, the aim, and the traffic flow, as a result having a good design can achieve the purpose of application and management of the pond. During the construction, pay attention in each step is important too, especially maintain the level of the construct. If the level isn’t balanced than it might cause the construction problem, also if there are any problems after the construct is done, it will take more time, more budget, and manpower to repair it.\n</p>\n</div>\n</div>\n</div>"
+        ]
+    },
+    "Dec" : {
+        "img": {
+            "main": [
+            ]
+        },
+        "text": [
+            "<div class='article'>\n<div class='row'>\n<div class='col-12'>\n<p class='text'>\nIn December, I work on the cultivation of the broodstock shrimp, the production of shrimp fry and cultivation the planktonic bait in Galoa aqua Station. Before that, I had taken the courses about shrimp fry cultivation, and I even went to the shrimp farm to see the whole operation methods, as the result should be familiar with shrimp farming. Due to the natural conditions for shrimp farming, there are many things That needs to pay attention to, including water temperature, salinity, pH value, watercolor, dissolved oxygen content, and water quality conditions. In addition, most of the shrimp fry ponds are indoors. The advantage of indoor aquaculture is that it is more relatively to control the situation and can keep away the interference from external environmental factors. For example, when it rains, the water temperature, salinity, and pH value in the water will decrease. If the water temperature is lower than 18 ° C, the shrimp fry. will stop eating and die at 9 ° C.\n</p>\n</div>\n<div class='col-12'>\n<div class='hoverDes'>\n<figure><img class='image6' src='img/Dec/pond.jpg' alt='des1'></figure>\n<figure><img class='image7' src='img/Dec/zoom.jpg' alt='des2'></figure>\n<figure><img class='image8' src='img/Dec/shrimp.jpg' alt='des3'></figure>\n</div>\n</div>\n</div>\n</div>"
+        ]
     }
 }

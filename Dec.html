@@ -3,46 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel=stylesheet type="text/css" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/notebook.css">
     <link rel=stylesheet type="text/css" href="css/Dec.css">
     <title>December Diary</title>
 </head>
 <body>
-    <header>
+    <header class="container custom-container-width">
         <h1 class="title">December</h1>
+        <span class="current"></span>
     </header>
-    <div class="main-area">
-        <a href="Nov.html" class="button_back"></a>
-        <div class="container">
-            <p class="text">
-                In December, I work on the cultivation of the broodstock shrimp, the
-                production of shrimp fry and cultivation the planktonic bait in Galoa aqua
-                Station. Before that, I had taken the courses about shrimp fry cultivation,
-                and I even went to the shrimp farm to see the whole operation methods, as 
-                The result should familiar with shrimp farming.
-                Due to the natural conditions for shrimp farming, there are many things
-                That needs to pay attention to, including water temperature, salinity, pH value,
-                watercolor, dissolved oxygen content, and water quality conditions. In
-                addition, most of the shrimp fry ponds are indoors. The advantage of indoor
-                aquaculture is that it is more relatively to control the situation and can keep
-                away the interference from external environmental factors. For example,
-                when it rains, the water temperature, salinity, and pH value in the water will
-                decrease. If the water temperature is lower than 18 ° C, the shrimp fry. will
-                stop eating and die at 9 ° C.
-            </p>
-            <div class="hoverDes">
-                <figure><img class="image6" src="img/Dec/pond.jpg" alt="des1"></figure>
-                <figure><img class="image7" src="img/Dec/zoom.jpg" alt="des2"></figure>
-                <figure><img class="image8" src="img/Dec/shrimp.jpg" alt="des3"></figure>
+    <div class="container custom-container-width main-area">
+        <div class="row">
+            <div class="col-1 button1"><a class="button_back"></a></div>
+            <div class="col-10">
+                <div class="container main-text">
+                    <div class='article'>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class='text'>
+                                    In December, I work on the cultivation of the broodstock shrimp, the
+                                    production of shrimp fry and cultivation the planktonic bait in Galoa aqua
+                                    Station. Before that, I had taken the courses about shrimp fry cultivation,
+                                    and I even went to the shrimp farm to see the whole operation methods, as 
+                                    The result should familiar with shrimp farming.
+                                    Due to the natural conditions for shrimp farming, there are many things
+                                    That needs to pay attention to, including water temperature, salinity, pH value,
+                                    watercolor, dissolved oxygen content, and water quality conditions. In
+                                    addition, most of the shrimp fry ponds are indoors. The advantage of indoor
+                                    aquaculture is that it is more relatively to control the situation and can keep
+                                    away the interference from external environmental factors. For example,
+                                    when it rains, the water temperature, salinity, and pH value in the water will
+                                    decrease. If the water temperature is lower than 18 ° C, the shrimp fry. will
+                                    stop eating and die at 9 ° C.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="hoverDes">
+                                    <figure><img class="image6" src="img/Dec/pond.jpg" alt="des1"></figure>
+                                    <figure><img class="image7" src="img/Dec/zoom.jpg" alt="des2"></figure>
+                                    <figure><img class="image8" src="img/Dec/shrimp.jpg" alt="des3"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-1 button2"><a class="button_next"></a></div>
         </div>
-        <a href="" class="button_next" style="visibility: hidden;"></a>
     </div>
     <nav class="nav">
         <a class="nav-link" href="index.html"><img class="img_home" src="img/Sep/home.png" alt=""></a>
     </nav>
     <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mobile-detect.min.js"></script>
     <script src="js/notebook.js"></script>
+    <script>
+        $(document).ready(function(){
+            listen("Dec");
+        });
+    </script>
 </body>
 </html>

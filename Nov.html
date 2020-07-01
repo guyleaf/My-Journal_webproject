@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel=stylesheet type="text/css" href="css/normalize.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/notebook.css">
     <link rel="stylesheet" type="text/css" href="css/Nov.css">
     <title>November Diary</title>
 </head>
 <body>
-    <header>
+    <header class="container custom-container-width">
         <h1 class="title">November</h1>
+        <span class="current"></span>
     </header>
-    <div class="main-area">
-        <a href="Oct.html" class="button_back"></a>
-        <div class="container">
-            <div class="second">
-                <div class="image-box">
-                    <img class="image1" src="img/Nov/level.jpg" alt="image2">
-                    <img class="image2" src="img/Nov/nov-1.jpg" alt="nov1">
-                    <img class="image3" src="img/Nov/nov-2.jpg" alt="nov2">
+    <div class="container custom-container-width main-area">
+        <div class="row">
+            <div class="col-1 button1"><a class="button_back"></a></div>
+            <div class="col-10">
+                <div class="container main-text">
+                    <div class='article'>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="image-box">
+                                    <img class="image1" src="img/Nov/level.jpg" alt="image2">
+                                    <img class="image2" src="img/Nov/nov-1.jpg" alt="nov1">
+                                    <img class="image3" src="img/Nov/nov-2.jpg" alt="nov2">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p class='text'>
+                                    In November, I join the construction work with the substitute civilian
+                                    servicemen. As I said before the design of the pond is the most important
+                                    step during the construction, including the size, the aim, and the
+                                    traffic flow, as a result having a good design can achieve the purpose of
+                                    application and management of the pond. During the construction, pay
+                                    attention in each step is important too, especially maintain the level of the
+                                    construct. If the level isn’t balanced than it might cause the construction
+                                    problem, also if there are any problems after the construct is done, it will
+                                    take more time, more budget, and manpower to repair it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="first">
-                <p class="text">
-                    In November, I join the construction work with the substitute civilian
-                    servicemen. As I said before the design of the pond is the most important
-                    step during the construction, including the size, the aim, and the
-                    traffic flow, as a result having a good design can achieve the purpose of
-                    application and management of the pond. During the construction, pay
-                    attention in each step is important too, especially maintain the level of the
-                    construct. If the level isn’t balanced than it might cause the construction
-                    problem, also if there are any problems after the construct is done, it will
-                    take more time, more budget, and manpower to repair it.
-                </p>
-            </div>
+            <div class="col-1 button2"><a class="button_next"></a></div>
         </div>
-        <a href="Dec.html" class="button_next"></a>
     </div>
     <nav class="nav">
         <a class="nav-link" href="index.html"><img class="img_home" src="img/Sep/home.png" alt=""></a>
     </nav>
     <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mobile-detect.min.js"></script>
     <script src="js/notebook.js"></script>
+    <script>
+        $(document).ready(function(){
+            listen("Nov");
+        });
+    </script>
 </body>
 </html>
