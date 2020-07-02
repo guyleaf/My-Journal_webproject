@@ -5,7 +5,7 @@ html {
 body {
     height: 100%;
     background-image: url(../img/1118.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 h1{
@@ -52,7 +52,6 @@ figure{
     padding: 23px 0;
     margin-left: 25px;
 }
-
 
 .Jul_pic{
     height: 140px;
@@ -115,13 +114,14 @@ figure{
         width: 100%;
     }
     .books {
+        max-height: 260px;
         padding: 1.2em 0;
         margin-left: 6%;
     }
     .Jul_pic{
         height: 110px;
     }
-    .Aug_pic{
+    .Aug_pic{ 
         height: 110px;
         transform: rotate(-8deg);
         margin-left: 9.8px;
