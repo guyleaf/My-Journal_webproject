@@ -43,25 +43,25 @@
 
 @media (orientation: landscape) and (max-width: 1024px) {
     .image-box{
-        height: 200px;
-        width: 650px;
+        height: 160px;
+        width: 560px;
     }
 
     .image1 {
-        width: 150px;
+        width: 140px;
         transform: rotate(5deg);
     }
     
     .image2{
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 120px;
         margin: 18px 20px 0 20px;
     }
     
     
     .image3{
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 120px;
         transform: rotate(355deg);
     }
 }

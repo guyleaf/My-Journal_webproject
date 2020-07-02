@@ -136,6 +136,7 @@ $(document).ready(function(){
             $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
         }
 
+        $(".title").remove();
         $(".button1").remove();
         $(".button2").remove();
         $(".row>div").removeClass("col-10");

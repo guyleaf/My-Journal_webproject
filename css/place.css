@@ -26,6 +26,7 @@ h1{
     font-size: 80px; 
     font-family: Ink Free;
     text-align: center;
+    margin-bottom: 10px;
 }
 .main-area {
     align-items: center;
@@ -33,11 +34,7 @@ h1{
     height: 570px;
     margin: 30px auto 0 auto;
 }
-.container {
-    padding: 45px 105px;
-    display: flex;
-    justify-content: center;
-}
+
 
 .link {
     text-decoration: none;
@@ -64,16 +61,43 @@ h1{
     border-radius: 50%;
 }
 
+
 .container figure{
+    height: 400px;
     width: 400px;
-    height: 407px;
+    background-size: cover;
 }
+
+@media (max-width: 1366px) {
+    h1 {
+        font-size: 40px; 
+    }
+
+    .container figure{
+        height: 270px;
+        width: 270px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 40px; 
+    }
+
+    .container figure{
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+    }
+}
+
 
 .Kiribati_pic{
     background-image: url(../img/Kiribati-3.jpg);
 }
 .Fiji_pic{
-   background-image: url(../img/Fiji-3.jpg);
+    background-image: url(../img/Fiji-3.jpg);
 }
 
 .pic{
@@ -92,7 +116,7 @@ h1{
 
 .row{
     justify-content: center !important;
-    align-content: stretch !important;
+    align-content: center !important;
 }
 .container figure:hover {
     opacity: 0.3;
