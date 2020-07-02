@@ -33,6 +33,28 @@
     transform: rotate(8deg);
   }
   .text {
+    font-size: 15px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  .image6{
+    margin-left: 30px;
+    width: 150px;
+    transform: rotate(8deg);
+  }
+  .image7{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 150px;
+    transform: rotate(350deg);
+  }
+  .image8{
+    margin-left: 30px;
+    width: 150px; 
+    transform: rotate(8deg);
+  }
+  .text {
     font-size: 12px;
   }
 }
@@ -40,6 +62,12 @@
 @media (orientation: landscape) and (max-width: 768px) {
   .text {
     font-size: 12.2px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 600px) {
+  .text {
+    font-size: 8px;
   }
 }
 

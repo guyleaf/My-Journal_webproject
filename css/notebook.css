@@ -22,6 +22,7 @@ body {
     background-image: url("../img/Sep/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(172, 226, 243);
 }
 
 @media (orientation: landscape) and (max-width: 1366px) {
@@ -55,11 +56,27 @@ body {
     .custom-container-width:first-child {
         max-width: 530px;
     }
+
+    .custom-container-width {
+        max-width: 510px;
+    }
 }
 
 @media (min-width: 768px) {
     .custom-container-width:first-child {
-        max-width: 750px;
+        max-width: 730px;
+    }
+    .custom-container-width {
+        max-width: 730px;
+    }
+}
+
+@media (min-width: 800px) {
+    .custom-container-width:first-child {
+        max-width: 710px;
+    }
+    .custom-container-width {
+        max-width: 710px;
     }
 }
 
@@ -257,7 +274,7 @@ body {
 @media (orientation: landscape) and (max-width: 1024px) {
     .main-area {
         height: 100%;
-        margin-top: 12px;
+        margin-top: 23px;
     }
 
     .title {
@@ -274,7 +291,38 @@ body {
     }
 
     .text {
-        font-size: 13.5px;
+        font-size: 15px;
+    }
+
+    .article {
+        padding-left: 0px;
+    }
+    .row {
+        justify-content: center;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+    .main-area {
+        height: 100%;
+        margin-top: 23px;
+    }
+
+    .title {
+        font-size: 2.1em;
+        margin-top: 0;
+    }
+
+    .main__aside {
+        width: 110px;
+    }
+
+    .main__pic {
+        width: 180px;
+    }
+
+    .text {
+        font-size: 13px;
     }
 
     .article {
@@ -283,11 +331,16 @@ body {
     .row {
         justify-content: center;
     }
+
+    .main-text {
+        padding-left: 26px !important;
+        padding-right: 26px !important;
+    }
 }
 
 @media (orientation: landscape) and (max-width: 768px) {
     .main-area {
-        margin-top: 8px;
+        margin-top: 18px;
     }
     .title {
         font-size: 28px;
@@ -299,10 +352,16 @@ body {
     }
 
     .current {
-        font-size: 1rem;
+        font-size: 0.1rem;
     }
+
     .row {
         justify-content: center;
+    }
+
+    .main-text {
+        padding-left: 26px !important;
+        padding-right: 26px !important;
     }
 }
 
@@ -327,8 +386,19 @@ body {
         margin-top: 0;
     }
 
+    .main-area {
+        height: 100%;
+        margin-top: 8px;
+    }
+
+    .main-text {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
     .main__aside {
         margin-top: 0;
+        width: 80px;
     }
 
     .main__pic {

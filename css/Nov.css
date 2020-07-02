@@ -68,29 +68,30 @@
 
 @media (orientation: landscape) and (max-width: 768px) {
     .image-box{
-        height: 190px;
-        width: 620px;
+        margin-top: 10px;
+        height: 140px;
+        width: 520px;
     }
 
     .image1 {
-        width: 130px;
+        width: 110px;
         transform: rotate(5deg);
     }
     
     .image2{
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         margin: 18px 20px 0 20px;
     }
     
     .image3{
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         transform: rotate(355deg);
     }
 
     .text {
-        font-size: 13.5px;
+        font-size: 11.5px;
     }
 }
 
@@ -120,5 +121,34 @@
 
     .text {
         font-size: 12px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 600px) {
+    .image-box{
+        height: 100px;
+        width: 450px;
+        margin-top: 0;
+    }
+
+    .image1 {
+        width: 80px;
+        transform: rotate(5deg);
+    }
+    
+    .image2{
+        width: 80px;
+        height: 70px;
+        margin: 18px 20px 0 20px;
+    }
+    
+    .image3{
+        width: 80px;
+        height: 70px;
+        transform: rotate(355deg);
+    }
+
+    .text {
+        font-size: 8.5px;
     }
 }
