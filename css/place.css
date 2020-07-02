@@ -89,9 +89,7 @@ h1{
     text-align: center;
     padding-top: 32%;
 }
-.col-md-5{
-    padding: 0px 0px 0px 0px !important;
-}
+
 .row{
     justify-content: center !important;
     align-content: stretch !important;
