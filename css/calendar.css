@@ -108,6 +108,29 @@ figure{
     margin-bottom: 2.5px;
 }
 
+#rotationReminder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(173, 246, 243);
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reminder {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    min-height: 2.5em;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 18px;
+}
+
 @media(max-width: 486px) {
     .background1, .background2 {
         width: 100%;

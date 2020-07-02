@@ -54,16 +54,16 @@ function listen(month) {
         page = parseInt(url.searchParams.get("page"));
     }
 
-    updateState(month, page);
+    getData(month, page);
     
     $(".button_back").on("click", function(){
         page--;
-        updateState(month, page);
+        getData(month, page);
     });
 
     $(".button_next").on("click", function(){
         page++;
-        updateState(month, page);
+        getData(month, page);
     });
 
     console.log("ready");
@@ -108,21 +108,27 @@ function handleTouchEnd() {
         direction = false;
     }
 
-    $.getJSON("json/notebook.json", function(result) {
-        let months = result.months;
+    let months = [
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+    ]
+    storeRef.doc(monthq).get().then(function(result){
+        result = result.data();
         if (direction == false) {
             if (page == 1 && months[months.indexOf(monthq) - 1] != undefined)
                 window.location.href = months[months.indexOf(monthq) - 1] + ".html";
             else if (page > 1) {
                 page--;
-                updateState(monthq, page);
+                getData(monthq, page);
             }
         } else if (direction == true) {
-            if (page == result[monthq].text.length && months[months.indexOf(monthq) + 1] != undefined)
+            if (page == result.text.length && months[months.indexOf(monthq) + 1] != undefined)
                 window.location.href = months[months.indexOf(monthq) + 1] + ".html";
-            else if (page < result[monthq].text.length) {
+            else if (page < result.text.length) {
                 page++;
-                updateState(monthq, page);
+                getData(monthq, page);
             }
         }
     });
@@ -133,7 +139,7 @@ $(document).ready(function(){
 
     if (md.mobile() != null && md.mobile() != "Nexus") {
         if (window.innerHeight > window.innerWidth) {
-            $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
+            $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please rotate your smartphone in order to have better experience.</div></div>');
         }
 
         $(".title").remove();
@@ -152,13 +158,13 @@ $(document).ready(function(){
         // 直向 (僅限於行動裝置)，後者避免開發者切換成行動裝置時誤判
         else if (window.matchMedia("(orientation: landscape)").matches && screen.height > screen.width) {
             if ($('#rotationReminder').length == 0)
-                $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please Rotate your smartphone in order to have better experience.</div></div>');
+                $('body').append('<div style="" id="rotationReminder"><div class="reminder">Please rotate your smartphone in order to have better experience.</div></div>');
         }
     }, false);
 
     var monthq = null;
     var page = null;
-
+    
     if (md.mobile() != null && md.mobile() != "Nexus")
     {
         document.addEventListener('touchstart', handleTouchStart, false);

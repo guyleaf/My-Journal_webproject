@@ -15,7 +15,8 @@ var storage = firebase.storage();
 var store = firebase.firestore();
 // Create a storage reference from our storage service
 var storageRef = storage.ref();
-
+var storeRef = store.collection('notebooks');
+var docRef = storeRef.doc("xy4M5tEubPgcyMiPUL5B");
 function getImage(image_name, classname) {
     storageRef.child(image_name).getDownloadURL().then(function(url) {
         // `url` is the download URL for 'images/stars.jpg'
@@ -40,5 +41,48 @@ function getImage(image_name, classname) {
 }
 
 function getData(month, page) {
+  storeRef.doc(month).get().then(function(result){
+    result = result.data();
+    let tmp = result.text[page - 1].replace("\\n", "\r\n");
+    $('.main-text').html(tmp);
+    $(".main__pic").attr("src", result.img.main[page - 1] ? result.img.main[page - 1] : "");
+    if (result.img.aside != undefined)
+    {
+        $(".main__aside").attr("src", result.img.aside);
+        $(".main-text").css("justify-content", "start");
+    }
+    else
+    {
+        $(".main-text").css("justify-content", "center");
+    }
+    
+    $(".button_back").css("visibility", "visible");
+    $(".button_next").css("visibility", "visible");
+    $(".button_back").removeAttr("href");
+    $(".button_next").removeAttr("href");
 
+    let months = [
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ]
+    if (page == 1)
+    {
+        if (months[months.indexOf(month) - 1] != undefined)
+            $(".button_back").attr("href", months[months.indexOf(month) - 1] + ".html");
+        else
+            $(".button_back").css("visibility", "hidden");
+    }
+    
+    if (result.text.length == page)
+    {
+        if (months[months.indexOf(month) + 1] != undefined)
+            $(".button_next").attr("href", months[months.indexOf(month) + 1] + ".html");
+        else
+            $(".button_next").css("visibility", "hidden");
+    }
+
+    $(".current").html("Home > " + month + " > " + page);
+  });
 }
